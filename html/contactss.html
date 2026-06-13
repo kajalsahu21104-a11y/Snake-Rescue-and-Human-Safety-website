@@ -1,0 +1,58 @@
+<!-- hospital-list.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>All Hospital Contacts</title>
+  <link rel="stylesheet" href="../css/contact.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-5">
+    <h2 class="text-success mb-4">Available Hospitals</h2>
+    <table class="table table-bordered" id="displayTable">
+      <thead class="table-success">
+        <tr>
+          <th>Image</th>
+          <th>Hospital Name</th>
+          <th>Location</th>
+          <th>Fees</th>
+          <th>Time</th>
+          <th>Doctor</th>
+          <th>Contact</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Dynamic Data -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $.ajax({
+        url: '../php/getHospitals.php',  // यह PHP फाइल DB से data fetch करेगी
+        type: 'GET',
+        dataType: 'json',
+        success: function (data) {
+          let rows = '';
+          data.forEach(function (row) {
+            rows += `
+              <tr>
+                <td><img src="../uploads/${row.image}" width="80"></td>
+                <td>${row.name}</td>
+                <td>${row.location}</td>
+                <td>${row.fees}</td>
+                <td>${row.time}</td>
+                <td>${row.doctor}</td>
+                <td>${row.contact}</td>
+              </tr>`;
+          });
+          $('#displayTable tbody').html(rows);
+        }
+      });
+    });
+  </script>
+</body>
+</html>

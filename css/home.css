@@ -1,0 +1,152 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.col-1{
+  width:8.33%;
+}
+.col-2{
+  width:16.66%;
+}
+.col-3{
+  width:25%;
+}
+.col-4{
+  width: 33.33%;
+}
+.col-5{
+  width: 41.66%;
+}
+.col-6{
+  width: 50%;
+}
+.col-7{
+  width: 58.33%;
+}
+.col-8{
+  width: 66.66%;
+}
+.col-9{
+  width: 75%;
+}
+.col-10{
+  width: 83.33%;
+}
+.col-11{
+  width: 91.66%;
+}
+.col-12{
+  width: 100%;
+}
+.row{
+  width: 100%;
+}
+body{
+  background-image: url("../img/2.jpg");
+  background-size: cover;
+  position: relative;
+}
+#dr{
+  text-align: center;
+  color: white;
+}
+.div{
+  width: 40%;
+  height: 60px;
+  float: right;
+  margin: 100px;
+}
+.main{
+  width: 100%;
+  height: 250px;
+  box-shadow: 0px 8px 8px 0px grey;
+}
+#header{
+  font-size: 50px;
+  font-style: oblique;
+  color: white;
+  text-align: right;
+}
+.iconbox{
+  width: 100px;
+  height: 100px;
+  border: 5px solid white;
+  box-shadow: 0px 8px 8px 0px grey;
+  float: left;
+  margin-top: 150px;
+  margin-left: 50px;
+
+}
+#ICON{
+  font-size: 30px;
+  color: white;
+  list-style: none;
+  margin-top: 20px;
+  margin-left: 30px;
+  float: left;
+}
+
+#hospital{
+margin-top: 140px;
+font-style: bold;
+font-size: 20px;
+color: white;
+padding: 10px;
+margin-left: 50px;
+}
+#Loginadmin{
+  border: 1px solid white;
+  margin-top: 10px;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  margin: 50px;
+}
+
+label{
+  font-size: 13px;
+  font-style:bold;
+  color: white;
+  padding: 10px;
+  width: 40%;
+}
+
+#admin_heading{
+  padding-top: 20px;
+  font-size: 30px;
+  font-style: oblique;
+  text-align: center;
+  color: white;
+  margin-bottom: 10px;
+}
+h5{
+  cursor: pointer;
+  color: white;
+  margin-top: 70px;
+}
+#email,#password,#BusinessName{
+width: 100%;
+height: 30px;
+border-radius: 15px;
+padding: 10px;
+margin-bottom: 5px;
+}
+
+.btn{
+  width: 20%;
+  height: 40px;
+  color: #014C14;
+  border-style: none;
+  background: white;
+  font-style: bold;
+  float: left;
+  margin-top: 10px;
+  margin-left: 180px;
+}
+
+.btn:hover{
+  cursor: pointer;
+  background:#007A10;
+  color: white;
+}

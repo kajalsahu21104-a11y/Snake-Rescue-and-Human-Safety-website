@@ -1,0 +1,108 @@
+body {
+  background-color: #f0f2f5;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.details-box {
+  max-width: 900px;
+  margin: 40px auto;
+  background: #fff;
+  border: 2px solid black;
+  border-radius: 14px;
+  padding: 30px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.details-box img {
+  width: 100%; /* Increase the image width */
+  height: 100%; /* Increased height for a better view */
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #333;
+}
+
+.details-box h3 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hospital-info {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.hospital-info p {
+  font-size: 18px; /* Increase font size for better readability */
+  margin-bottom: 15px;
+}
+
+
+
+.hospital-card {
+  border: 2px solid black;
+  border-radius: 14px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  padding: 20px;
+
+}
+
+.hospital-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+}
+
+.hospital-image {
+  width: 95%;
+  height: 200px;
+  object-fit: cover;
+  border: 2px solid black;
+
+}
+
+.hospital-info {
+  padding: 20px;
+  text-align: left;
+}
+
+.hospital-info h5 {
+  font-weight: bold;
+  margin-bottom: 14px;
+  font-size: 1.25rem;
+  color: #000;
+}
+
+.hospital-info p {
+  font-size: 15.5px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.hospital-info i {
+  margin-right: 8px;
+  font-size: 16px;
+  color: white;
+  background: green;
+  padding: 5px;
+}
+
+.shake-icon {
+  color: green;
+  margin-right: 10px;
+  font-size: 22px;
+  display: inline-block;
+  animation: shake 1.2s infinite;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(-3px); }
+  40% { transform: translateX(3px); }
+  60% { transform: translateX(-3px); }
+  80% { transform: translateX(3px); }
+  100% { transform: translateX(0); }
+}

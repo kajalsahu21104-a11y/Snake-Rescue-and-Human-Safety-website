@@ -1,0 +1,29 @@
+.gallery-title {
+  text-align: center;
+  margin: 40px 0 20px;
+}
+
+.gallery-img, .gallery-video {
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.gallery-img img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+img{
+  width: 100%;
+  height: 200px;
+}
+.gallery-img img:hover {
+  transform: scale(1.05);
+}
+
+video {
+  width: 100%;
+  border-radius: 10px;
+}

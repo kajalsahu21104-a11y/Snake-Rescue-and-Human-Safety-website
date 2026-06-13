@@ -1,0 +1,17 @@
+.hospital-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.hospital-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 250px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+.hospital-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}

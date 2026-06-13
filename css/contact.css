@@ -1,0 +1,415 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* General Container */
+.div {
+  background-image: url(../b2.jpg);
+  background-size: cover;
+  padding-top: 20px;
+}
+
+#head {
+  margin-top: 20px;
+  text-align: center;
+  font-style: oblique;
+  font-size: 3rem;
+  color: white;
+}
+
+.mainbox {
+  margin-top: 30px;
+  width: 100%;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.5);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#nav {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+#nav-item {
+  background: #007A10;
+  color: white;
+  text-align: center;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 5px;
+  height: 40px;
+}
+
+#nav-item:hover {
+  border-radius: 20px;
+}
+
+#nav-link {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+#search {
+  width: 200px;
+  height: 30px;
+  margin-right: 20px;
+  margin-top: 5px;
+}
+
+/* Section Headings */
+#hospital, #prescription, #rescuteam {
+  margin-top: 40px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  background: #007A10;
+  color: white;
+  padding: 10px;
+}
+
+/* Doctor Boxes */
+.Drbox1, .Drbox2, .Drbox3, .Drbox4, .Drbox5 {
+  width: 200px;
+  height: 200px;
+  border-radius: 7px;
+  border: 1px solid black;
+  margin: 20px;
+  float: left;
+  background-size: cover;
+}
+
+.Drbox1 {
+  background-image: url("../img/h1.jpg");
+}
+
+/* Forms */
+label {
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  padding: 10px;
+}
+
+#login1 {
+  padding-top: 20px;
+  font-size: 30px;
+  font-style: oblique;
+  text-align: center;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.loginForm {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border: 1px solid black;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 12px;
+}
+
+#loginemail, #loginpassword {
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+#btn {
+  width: 100%;
+  height: 40px;
+  color: #014C14;
+  border: none;
+  background: white;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+#btn:hover {
+  background: #007A10;
+  color: white;
+}
+
+/* Hospital and Doctor Cards */
+.hospital-card, .doctor-card {
+  border: 2px solid black;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+
+.hospital-card:hover, .doctor-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+}
+
+.hospital-image{
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+.doctor-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.hospital-info, .doctor-info {
+  padding: 20px;
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+text-align: left;
+
+}
+
+.hospital-info h5, .doctor-info h5 {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.hospital-info p, .doctor-info p {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+/* Feedback Form */
+.container {
+  width: 95%;
+  margin: auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+.contactfeed,.card{
+  max-width: 600px;
+  margin: auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+input[type="text"], textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1em;
+}
+
+input[type="text"]:focus, textarea:focus {
+  border-color: #3a8dde;
+  outline: none;
+}
+
+/* Star Rating */
+.rating-box {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.stars {
+  direction: rtl;
+  display: inline-flex;
+}
+
+.stars input {
+  display: none;
+}
+
+.stars label {
+  font-size: 2em;
+  color: #ddd;
+  cursor: pointer;
+  transition: color 0.3s, transform 0.2s;
+}
+
+.stars input:checked ~ label,
+.stars label:hover,
+.stars label:hover ~ label {
+  color: #f7c600;
+  transform: scale(1.2);
+}
+
+/* Submit Button */
+button {
+  width: 100%;
+  padding: 12px;
+  background: #3a8dde;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 1.1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #276fbf;
+}
+
+/* Feedback Table */
+.table-wrapper {
+  margin-top: 30px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+footer {
+  background-color: #212529;
+  color: white;
+  text-align: center;
+  padding: 15px 10px;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.2);
+  font-size: 0.95rem;
+}
+
+.footer-link{
+  color:white;
+  text-decoration:none;
+  font-size:14px;
+}
+.footer-link:hover{
+  color:#157347;
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+  #head {
+    font-size: 2.5rem;
+  }
+
+  .mainbox {
+    flex-direction: column;
+    height: auto;
+  }
+
+  #nav {
+    justify-content: center;
+  }
+
+  #nav-item {
+    width: auto;
+    margin: 5px;
+    padding: 10px;
+  }
+
+  .Drbox1, .Drbox2, .Drbox3, .Drbox4, .Drbox5 {
+    float: none;
+    margin: 10px auto;
+  }
+
+  .container, .card {
+    width: 90%;
+  }
+
+  .hospital-image {
+    height: 250px;
+  }
+
+  .doctor-image {
+    height: 200px;
+  }
+
+  .loginForm {
+    float: none;
+    width: 90%;
+  }
+
+  .table-wrapper {
+    padding: 10px;
+  }
+
+  table, th, td {
+    font-size: 0.9rem;
+  }
+}
+.card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  height: 250px;
+  object-fit: cover;
+}
+
+.card-body {
+  text-align: left;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.card-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.card-text {
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+}
+
+.card-text i {
+  margin-right: 8px;
+  color: #0d6efd;
+}
+
+.btn-outline-primary {
+  margin-top: auto;
+  width: 100%; /* Full width button */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-outline-primary i {
+  margin-right: 6px;
+}

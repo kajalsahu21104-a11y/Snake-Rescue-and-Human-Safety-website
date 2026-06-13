@@ -1,0 +1,117 @@
+/* Reset and font */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #a8e063, #56ab2f); /* fresh green gradient */
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Registration card styling */
+#registration {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(21, 85, 14, 0.3); /* dark green shadow */
+  width: 100%;
+  max-width: 600px;
+  animation: slideUp 0.8s ease;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Form title */
+#registration1 {
+  font-family: 'Bungee Tint', cursive;
+  font-size: 32px;
+  color: #2c6f2c; /* dark green */
+  text-align: center;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 1px #b0d8b0;
+}
+
+/* Input styling */
+input.form-control {
+  border-radius: 12px;
+  padding: 12px 15px;
+  border: 1px solid #65a765; /* medium green */
+  transition: all 0.3s ease-in-out;
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+input.form-control:focus {
+  border-color: #2c6f2c;
+  box-shadow: 0 0 8px rgba(44, 111, 44, 0.5);
+}
+
+/* Label styling */
+label.form-label {
+  font-weight: 600;
+  color: #2c6f2c;
+}
+
+/* Radio buttons */
+.form-check-label {
+  font-weight: 500;
+  margin-right: 15px;
+  color: #2c6f2c;
+}
+
+/* Button styling */
+#registerbtn {
+  background-color: #2c6f2c; /* dark green */
+  color: white;
+  font-weight: bold;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  width: 100%;
+  margin-top: 20px;
+  transition: background 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+#registerbtn:hover {
+  background-color: #1e4a1e; /* deeper green */
+  box-shadow: 0 0 10px #2c6f2caa;
+}
+
+/* Error message style */
+#errorMsg {
+  font-size: 13px;
+  color: #b30000;
+  margin-top: 2px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  #registration {
+    padding: 30px 20px;
+  }
+
+  #registration1 {
+    font-size: 26px;
+  }
+
+  input.form-control {
+    font-size: 14px;
+  }
+
+  #registerbtn {
+    font-size: 15px;
+  }
+}

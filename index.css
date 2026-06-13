@@ -1,0 +1,96 @@
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.animate-slide-up {
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+/* Registration Card */
+.form-section {
+  padding: 60px 20px;
+  background: linear-gradient(to right, #e6f2e6, #ffffff);
+}
+
+.registration-card {
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+  max-width: 600px;
+  margin: auto;
+}
+
+/* Hover Zoom Effect on Cards */
+.hover-zoom {
+  transition: transform 0.3s ease, box-shadow 0.3s;
+  border-radius: 10px;
+}
+
+.hover-zoom:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Image Styling */
+.card-img-top {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 220px;
+  object-fit: cover;
+}
+#header{
+  background-image: url("b2.jpg");
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
+}
+.navbar-nav .nav-link:hover {
+  color: green;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+/* Default link style: green background with white text */
+.navbar-nav .nav-link {
+  background-color: green;
+  color: white !important;
+  border-radius: 5px;
+  padding: 6px 12px;
+  margin-right: 8px;
+  transition: 0.3s ease;
+}
+
+/* On click (active link): remove background, make text green */
+.navbar-nav .nav-link.active {
+  background-color: transparent;
+  color: green !important;
+  border: 1px solid green;
+}
+/* Footer Styling */
+footer {
+  background-color: #212529;
+  color: white;
+  text-align: center;
+  padding: 15px 10px;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.2);
+  font-size: 0.95rem;
+}
+.footer-link{
+  color:white;
+  text-decoration:none;
+  font-size:14px;
+}
+.footer-link:hover{
+  color:#157347;
+}

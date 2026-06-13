@@ -1,0 +1,121 @@
+/* General Body Styling */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* Header with Background Image */
+#header {
+  background-image: url("../b2.jpg"); /* adjust path if needed */
+  /* background-size: cover; */
+  background-position: center;
+  color: white;
+  padding: 80px 20px;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+#header::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* dark overlay */
+  z-index: -1;
+}
+
+#header h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+#header p {
+  font-size: 1.25rem;
+  margin-bottom: 0;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #212529;
+  color: white;
+  text-align: center;
+  padding: 15px 10px;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.2);
+  font-size: 0.95rem;
+}
+.footer-link{
+  color:white;
+  text-decoration:none;
+  font-size:14px;
+}
+.footer-link:hover{
+  color:#157347;
+}
+/* Navbar active h hover effect */
+/* .navbar-nav .nav-link {
+  background-color: green;
+  color: white !important;
+  border-radius: 5px;
+  padding: 6px 12px;
+  margin-right: 8px;
+  transition: 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffc107 !important;
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link.active {
+  background-color: white;
+  color: green !important;
+  border: 1px solid green;
+} */
+
+/* Responsive Images */
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.navbar-nav .nav-link:hover {
+  color: green;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+/* Default link style: green background with white text */
+.navbar-nav .nav-link {
+  background-color: green;
+  color: white !important;
+  border-radius: 5px;
+  padding: 6px 12px;
+  margin-right: 8px;
+  transition: 0.3s ease;
+}
+
+/* On click (active link): remove background, make text green */
+.navbar-nav .nav-link.active {
+  background-color: transparent;
+  color: green !important;
+  border: 1px solid green;
+}
+
+
+/* Section Heading */
+h2 {
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+/* Animate on scroll (optional) */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
